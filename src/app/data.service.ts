@@ -10,7 +10,7 @@ export class DataService {
   constructor(private _http: HttpClient) {}
 
     getPrices() {
-      return this._http.get('https://api.coinmarketcap.com/v1/ticker/?limit=10')
+      return this._http.get('https://api.coinmarketcap.com/v1/ticker/?limit=100')
         .map(result => this.result = result);
     }
 
