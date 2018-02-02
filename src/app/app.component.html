@@ -1,0 +1,11 @@
+<h3>Top Cryptocurrencies</h3>
+<div *ngIf="cryptos">
+  <div class="grid grid-pad">
+    <a *ngFor="let crypto of objectKeys(cryptos)" class="col-1-4">
+      <div class="module hero">
+        <span class="left">{{ cryptos[crypto].name }} ({{ cryptos[crypto].symbol}})</span>
+        <span class="right">{{ cryptos[crypto].price_usd | currency:'USD':true}}</span>
+      </div>
+    </a>
+  </div>
+</div>
