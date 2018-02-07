@@ -5,10 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { DataService } from './data.service';
+import { BarChartComponent } from './shared/barchart/barchart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
